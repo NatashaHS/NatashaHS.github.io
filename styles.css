@@ -1,10 +1,60 @@
-div.image img {
-  width: 30vw;
+body, h1 {
+  font-family: 'Josefin Sans', sans-serif;
 }
 h1 {
-  color: blue;
+  font-size: 2.5rem;
+  color: #000080;
   text-align: center;
 }
 p {
+  color: #ffcc00;
+}
+.only-desktop {
+  display: none;
+}
+article#intro {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px 0;
+}
+img#me {
+  border-radius: 50%;
+  margin: 15px;
+  position: relative;
+  opacity: 0.7;
+  filter: grayscale(100%);
+}
+article#intro div {
+  position: absolute;
+  top: 25%;
+  left: 7%;
   text-align: center;
+}
+ul {
+  list-style-type: none;
+  text-align: center;
+}
+ul li a {
+  color: #136a84
+}
+@media only screen and (min-width: 480px){
+  .only-desktop {
+    display: initial;
+  }
+  img#me {
+    width: 200px;
+    position: initial;
+    margin-top: 10%;
+    filter: none;
+  }
+  article#intro div {
+    position: initial;
+  }
+  li {
+    display: inline;
+  }
+  span {
+    padding: 10px;
+  }
 }
